@@ -3,3 +3,37 @@
   padding: 0;
   margin: 0;
 }
+body {
+  font-size: 18px;
+  background-color: #676060;
+}
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 3em;
+  font-family: "Pacifico", cursive;
+  color: #279494;
+}
+
+section {
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  background-color: #bcb0b0;
+}
+p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+ul {
+  margin: 10px 30px;
+  font-size: 0.8em;
+}

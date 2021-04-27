@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
@@ -13,6 +16,23 @@
 
 <body>
 
+    <main>
+        <h1>BoolTicket</h1>
+        <section>
+            <p id="biglietto">prezzo_biglietto_treno</p>
+            <ul>
+                <li>
+                    Km di viaggio: <span id="km_viaggio"></span>
+                </li>
+                <li>
+                    Età viaggiatore: <span id="eta_viaggiatore"></span>
+                </li>
+                <li id="sconto">
+                    Nessuno sconto applicato per la fascia di età selezionata
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>

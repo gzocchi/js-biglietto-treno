@@ -16,29 +16,19 @@ if (etaViaggiatore <= 18 || etaViaggiatore >= 65) {
     var scontoUnder = bigliettoIntero * 0.2;
     var prezzoScontatoUnder = (bigliettoIntero - scontoUnder).toFixed(2);
     console.log("Il prezzo del biglietto per percorrere " + kmViaggio + "km, con uno sconto del 20%, è: " + prezzoScontatoUnder + "€");
+    document.getElementById("biglietto").innerHTML = "Il prezzo del biglietto per percorrere " + kmViaggio + "km, con uno sconto del 20%, è: " + prezzoScontatoUnder + "€";
+    document.getElementById("sconto").innerHTML = scontoUnder.toFixed(2) + "€ di sconto applicato";
   } else {
     var scontoOver = bigliettoIntero * 0.4;
     var prezzoScontatoOver = (bigliettoIntero - scontoOver).toFixed(2);
     console.log("Il prezzo del biglietto per percorrere " + kmViaggio + "km, con uno sconto del 40%, è: " + prezzoScontatoOver + "€");
-  }
+    document.getElementById("biglietto").innerHTML = "Il prezzo del biglietto per percorrere " + kmViaggio + "km, con uno sconto del 40%, è: " + prezzoScontatoOver + "€";
+    document.getElementById("sconto").innerHTML = scontoOver.toFixed(2) + "€ di sconto applicato"
+}
 } else {
   console.log("Il prezzo del biglietto intero, per percorrere " + kmViaggio + "km, è: " + bigliettoIntero + "€");
+  document.getElementById("biglietto").innerHTML = "Il prezzo del biglietto intero, per percorrere " + kmViaggio + "km, è: " + bigliettoIntero + "€";
 }
 
-
-
-// debug
-// console.log("kmViaggio: " + kmViaggio);
-// console.log(kmViaggio);
-// console.log("etaViaggiatore: " + etaViaggiatore);
-// console.log(etaViaggiatore);
-// console.log("bigliettoIntero: " + bigliettoIntero);
-// console.log(bigliettoIntero);
-// console.log("scontoUnder: " + scontoUnder);
-// console.log(scontoUnder);
-// console.log("prezzoScontatoUnder: " + prezzoScontatoUnder);
-// console.log(prezzoScontatoUnder);
-// console.log("scontoOver: " + scontoOver);
-// console.log(scontoOver);
-// console.log("prezzoScontatoOver: " + prezzoScontatoOver);
-// console.log(prezzoScontatoOver);
+document.getElementById("km_viaggio").innerHTML = kmViaggio;
+document.getElementById("eta_viaggiatore").innerHTML = etaViaggiatore;
